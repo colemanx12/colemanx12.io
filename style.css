@@ -11,7 +11,7 @@ body {
 }
 h1 {
     font-size: 30pt;
-    color: #20bcd5;
+    color: #990099;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
@@ -20,6 +20,11 @@ h1 span {
     border: 4px dashed #20bcd5;
     padding: 10px;
 }
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+}
+
 p {
     padding: 0;
     margin: 0;
