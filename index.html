@@ -4,7 +4,13 @@
         <title>Garnet love foundation</title>
         		<!-- link to main stylesheet -->
 	 <link rel="stylesheet" type = "text/css" href="style.css">
-    </head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+<style>
+.mySlides {display:none;}
+</style>
+</head>
     
     <body>
         <!-- header start -->
@@ -31,18 +37,30 @@ You can always join us on this train and make a difference. Thank you.<p class="
             
 			<div class="section">
             <h1><span>Our Media</span></h1>
-			<div class="slide-container">
-			<img src="2018.1.png"  height="200" />
-			<img src="2018.2.png"  height="200" />
-		    <img src="2018.3.png"  height="200" />
-			<img src="2018.4.png"  height="200" />
-			<img src="2019.1.png"  height="200" />
-			<img src="2019.2.png"  height="200" />
-			<img src="2019.3.png"  height="200" />
-			<img src="2019.4.png"  height="200" /></div>
+		    <img class="mySlides" src="image/2018.1.png" height = "500px" />
+			<img class="mySlides"  src="image/2018.2.png"  height = "500px"/>
+		    <img class="mySlides"  src="image/2018.3.png"  height = "500px"/>
+			<img class="mySlides"  src="image/2018.4.png" height = "500px" />
+			<img class="mySlides"  src="image/2019.1.png"  height = "500px"/>
+			<img class="mySlides"  src="image/2019.2.png"  height = "500px"/>
+			<img class="mySlides"  src="image/2019.3.png" height = "500px" />
+			<img class="mySlides"  src="image/2019.4.png"  height = "500px"/></div>
+  <script>
+var myIndex = 0;
+carousel();
 
-		    
-        </div>
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
         <!-- About Me section end -->
         
         <!-- My Schedule section start -->
