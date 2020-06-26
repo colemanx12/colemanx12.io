@@ -55,17 +55,45 @@ They deserve to live better You can always join us on this train and make a diff
       <img src="image/pic.jpg"  style="width:100%">
     </div>
   </div>
-			<div class="section">
+			<div class="section">  <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+                .column {
+                  float: left;
+                  width: 33.33%;
+                  padding: 5px;
+                }
+                
+                /* Clearfix (clear floats) */
+                .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                </style>
             <h1><span>Our Media</span></h1>
-		    <img  src="image/2018.1.png"  height="200"/>
-			<img   src="image/2018.2.png" height="200" />
-		    <img  src="image/2018.3.png" height="200" />
-			<img src="image/2018.4.png" height="200"/>
-			<img  src="image/2019.1.png" height="200" />
-			<img  src="image/2019.2.png"  height="200"/>
-			<img  src="image/2019.3.png" height="200" />
-            <img src="image/2019.4.png" height="200" />
-            </div>
+            <div class="row">
+                <div class="column">
+                  <img src="image/2018.1.png"  style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="image/2018.2.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="image/2018.4.png"  style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="image/2019.1.png"  style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="image/2019.2.png" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="image/2019.3.png" style="width:100%">
+                  </div>
+                  </div>
  
         <!-- About Me section end -->
         
