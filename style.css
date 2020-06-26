@@ -39,12 +39,12 @@ p {
     border-radius: 10px;
 }
 #header {
-    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-image: ;
     background-size: cover;
 }
 #header img {
     display: block;
-    width: 80px;
+    width: 80;
     height: 80px;
     margin: auto;
 }
